@@ -1,3 +1,34 @@
+##How To Install
+clone the source git clone [clone address] 
+if 
+
+## What next?
+After clone or download this repository, next step is install all dependency required by laravel and laravel-mix.
+
+shell
+# install composer-dependency
+$ composer install
+# install npm package
+$ npm install
+# build dev 
+$ npm run dev
+
+
+Before we start web server make sure we already generate app key, configure `.env` file and do migration.
+
+shell
+# create copy of .env
+$ cp .env.example .env
+# create laravel key
+$ php artisan key:generate
+# create storage
+$ php artisan storage:link
+# laravel migrate
+$ php artisan migrate
+
+ 
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
